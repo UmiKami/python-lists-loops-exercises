@@ -5,8 +5,7 @@ inicialValue = 0
 stopValue = 0
 increaseValue = 0
 
-for i in range(int(len(my_list)/2), len(my_list)):
+for i in range(inicialValue, stopValue):
     if i == my_list[i]:
         i += increaseValue
     print(my_list[i])
-
