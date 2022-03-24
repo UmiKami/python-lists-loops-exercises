@@ -5,3 +5,5 @@ contact = {
 }
 #Your code here:
 
+for prop in contact:
+    print(prop + " : " + contact[prop])
