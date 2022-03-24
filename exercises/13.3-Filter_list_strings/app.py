@@ -7,3 +7,12 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def filterNames(name):
+    if name.find('am') != -1:
+        return name
+    else:
+        return None
+
+newNames = list(filter(lambda name: filterNames(name) , names))
+
+print(newNames)

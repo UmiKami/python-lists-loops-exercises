@@ -9,4 +9,13 @@ all_colors = [
 ]
 
 #Your code go here:
+def filter_colors(color):
+	return color['sexy'] == True
 
+def generate_li(prop):
+	return "<li>" + prop['label'] + "</li>"
+	
+filtered_list = list(filter(lambda color: filter_colors(color), all_colors))
+list_items = list(map(lambda prop: generate_li(prop), filtered_list))
+
+print(list_items)
